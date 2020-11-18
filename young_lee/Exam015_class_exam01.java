@@ -18,7 +18,6 @@ class Car {
 
 class fireEngine extends Car {
     int counter_fire = 0;
-
     void water() {
         System.out.println("Spray water");
         counter_fire += 1;
