@@ -39,3 +39,4 @@ public class test01 {
         System.out.println(((Object) get_class_test).getClass());
     }
 }
+
