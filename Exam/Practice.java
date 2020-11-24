@@ -10,4 +10,10 @@ public class Practice {
         System.out.println("    " + number);
         number++;
     }
+    public void split(String k) {
+        for (int i = 0; i < 50; i++) {
+            System.out.print('*');
+        }
+        System.out.println("    " + k);
+    }
 }
