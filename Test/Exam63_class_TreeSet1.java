@@ -7,7 +7,7 @@ public class Exam63_class_TreeSet1 {
         TreeSet set = new TreeSet();
 
         String from = "b";
-        String to = "g";
+        String to = "d";
 
         set.add("abc"); set.add("bts"); set.add("big_bang");
         set.add("red_velvet"); set.add("brown"); set.add("zebra");

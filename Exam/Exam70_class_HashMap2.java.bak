@@ -1,0 +1,40 @@
+package Exam;
+
+import java.util.*;
+
+public class Exam70_class_HashMap2 {
+    public static void main(String[] args) {
+
+        String str = "fight the feeling for what ?? this is it.. and that is that";
+        String[] word = str.split(" ");
+
+
+        for (int i = 0; i < word.length; i++) {
+            if (map.continsKey(word[i])) {
+                int value = (int) map.get(word[i]);
+                map.put(word[i], value + 1);
+            } else {
+                map.put(word[i], 1);
+            }
+        }
+        System.out.println(list);
+        List<Map.Entry<String, Integer>> list = new LinkedList<>(map.entrySet());
+
+        Collections.sort(list, new DescComp());
+        Map<String, Integer> sortedMap = new LinkedHashMap<>();
+        for (Iterator<Map.Entry<String, Integer>> iter = list.iterator(); iter.hashNext();) {
+            Map.Entry<String, Integer> entry = iter.next();
+            sortedMap.put(entry.getKey(), entry.getValue());
+        }
+    }
+
+}
+
+
+class DescComp implements Comparator<Map.Entry<String, Integer>> {
+    @Override
+    public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2){
+        int comparision = (o1.getValue()-o2.getValue()) * -1;
+        return comparision==0 ? o1.getKey().compareTo(o2.getKey()) : comparision;
+    }
+}
