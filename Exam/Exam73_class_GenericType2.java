@@ -23,7 +23,7 @@ class Box<T> {
     public String toString() { return list.toString(); }
 }
 
-public class Exaz73_class_GenericType2 {
+class Exaz73_class_GenericType2 {
     public static void main(String[] args) {
         FruitBox<Fruit> fruitBox = new FruitBox<Fruit>();
         FruitBox<Apple> appleBox = new FruitBox<>();
