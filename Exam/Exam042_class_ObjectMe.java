@@ -1,5 +1,6 @@
 package Exam;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 class Card {
@@ -26,6 +27,7 @@ class Card {
 }
 
 class Basic {
+    @SuppressWarnings("unused")
     int number = 1;
 }
 
@@ -84,9 +86,9 @@ public class Exam042_class_ObjectMe {
         p.split();
         String animal = "dog, cat, bear, tiger, elephant, whild dog";
         String[] ani_arr = animal.split(",");
-        System.out.println(ani_arr);
-        for (int i=0; i < ani_arr.length; i++) {
-            System.out.println(ani_arr[i].strip());
+        System.out.println(Arrays.toString(ani_arr));
+        for (String s : ani_arr) {
+            System.out.println(s.strip());
         }
         String str = String.join(",", ani_arr);
         System.out.println(str + "mMMmmHHhhhh");

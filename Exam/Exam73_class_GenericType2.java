@@ -1,6 +1,5 @@
 package Exam;
 
-
 import java.util.ArrayList;
 
 class Fruit implements Eatable {
@@ -23,7 +22,7 @@ class Box<T> {
     public String toString() { return list.toString(); }
 }
 
-public class Exaz73_class_GenericType2 {
+public class Exam73_class_GenericType2 {
     public static void main(String[] args) {
         FruitBox<Fruit> fruitBox = new FruitBox<Fruit>();
         FruitBox<Apple> appleBox = new FruitBox<>();
