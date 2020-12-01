@@ -2,8 +2,6 @@ package Exam;
 
 public class Exeam82_class_ThreadInterrupt {
     public static void main(String[] args) {
-        ThreadEx83_1 t1 = new Thread(ThreadEx83_1);
-        t1
 
     }
 }
